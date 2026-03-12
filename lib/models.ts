@@ -74,7 +74,7 @@ export const SHARED_PROMPT = `
 This is a professional photo retouching task on an existing real photograph -- not an image generation task. Do not generate a new image. Do not redraw any part of the scene. Edit only what is explicitly specified below.
 
 WHAT TO CHANGE:
-Replace the existing graphic printed on the front of the t-shirt with the design provided in the second image. Reproduce the uploaded design faithfully -- do not simplify, stylize, reinterpret, rescale disproportionately, or alter its colors, shapes, layout, or composition in any way.
+Replace the entire t-shirt appearance with the design provided in the second image. This includes both the shirt's base color and the graphic printed on it -- apply the uploaded design's shirt color AND its graphic exactly as they appear. Reproduce the uploaded design faithfully -- do not simplify, stylize, reinterpret, rescale disproportionately, or alter its colors, shapes, layout, or composition in any way.
 
 WHAT MUST NOT CHANGE (preserve pixel-perfectly):
 - The model's face, skin tone, eyes, lips, expression, and all facial features
@@ -82,7 +82,7 @@ WHAT MUST NOT CHANGE (preserve pixel-perfectly):
 - The model's hands, fingers, fingernails, arms, elbows, neck, and body proportions
 - The model's exact pose, stance, and body posture
 - All clothing other than the shirt's graphic area (pants, shoes, socks, belt, accessories, jewelry, outerwear, hats)
-- The shirt's base color, fabric texture, shape, cut, collar style, sleeve length, hem, cuffs, and all seam lines
+- The shirt's fabric texture, shape, cut, collar style, sleeve length, hem, cuffs, and all seam lines (the shirt's base color SHOULD change to match the uploaded design)
 - The background -- its color, tone, texture, gradients, depth, and any environmental or studio elements
 - The scene's lighting direction, softness, intensity, and color temperature
 - All existing shadows cast by the model onto the background and onto the shirt itself
