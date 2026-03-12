@@ -77,11 +77,17 @@ You are given two images:
 
 This is a professional photo retouching task on an existing real photograph -- not an image generation task. Do not generate a new image. Do not redraw any part of the scene. Edit only what is explicitly specified below.
 
+STEP 1 -- ERASE THE ORIGINAL SHIRT DESIGN:
+Before placing any new design, erase every existing graphic, logo, pattern, illustration, text, print, and decoration from the model's shirt in IMAGE 1. The shirt must become completely plain and blank -- a single solid color with no remnant of any prior design element. Preserve the shirt's fabric texture, folds, wrinkles, creases, lighting, shadows, and fit exactly as they appear in IMAGE 1. Only the surface decoration is removed; the physical shirt remains unchanged.
+
+STEP 2 -- APPLY THE UPLOADED DESIGN:
+Once the shirt is blank, place the uploaded t-shirt design from IMAGE 2 onto the shirt. Blend it naturally with the shirt's existing folds, lighting, shadows, and perspective so it appears realistically screen-printed on the fabric.
+
 WHAT TO CHANGE:
-Replace the entire t-shirt worn by the model in IMAGE 1 with the t-shirt shown in IMAGE 2. Every single detail of the output shirt -- color, graphic, text, print, pattern, and overall appearance -- must come EXCLUSIVELY from IMAGE 2. Do not carry over, blend, or retain ANY detail from the model's original shirt in IMAGE 1. The original shirt in IMAGE 1 is completely discarded and replaced. Do not approximate, summarize, or reinterpret IMAGE 2 -- copy it exactly and completely.
+Replace the entire surface decoration of the t-shirt worn by the model in IMAGE 1 with the t-shirt design shown in IMAGE 2. Every single detail of the output shirt -- color, graphic, text, print, pattern, and overall appearance -- must come EXCLUSIVELY from IMAGE 2. Do not carry over, blend, or retain ANY design detail from the model's original shirt in IMAGE 1. The original shirt's design in IMAGE 1 is completely erased before the new design is applied. Do not approximate, summarize, or reinterpret IMAGE 2 -- copy it exactly and completely.
 
 CRITICAL -- SHIRT SOURCE RULE:
-The output shirt must look like IMAGE 2's shirt worn by the model in IMAGE 1's pose and lighting. It must NOT look like IMAGE 1's shirt with IMAGE 2's design applied on top. Every shirt detail -- base color, fabric color, graphic, text, print, logo, and pattern -- must come solely from IMAGE 2. Nothing from IMAGE 1's shirt should remain in the output.
+The output shirt must look like IMAGE 2's shirt worn by the model in IMAGE 1's pose and lighting. It must NOT look like IMAGE 1's shirt with IMAGE 2's design applied on top. Every shirt detail -- base color, fabric color, graphic, text, print, logo, and pattern -- must come solely from IMAGE 2. Nothing from IMAGE 1's shirt design should remain in the output.
 
 WHAT MUST NOT CHANGE (preserve pixel-perfectly):
 - The model's face, skin tone, eyes, lips, expression, and all facial features
