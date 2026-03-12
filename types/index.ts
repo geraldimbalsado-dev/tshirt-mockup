@@ -8,6 +8,8 @@ export type ModelId =
 
 export type Gender = "female" | "male";
 
+export type AcceptedMimeType = "image/png" | "image/jpeg" | "image/webp" | "image/gif";
+
 export interface BrandModel {
   id: ModelId;
   label: string;
@@ -21,14 +23,9 @@ export interface BrandModel {
 
 export type GenerationStatus = "idle" | "loading" | "success" | "error";
 
-export interface GenerationResult {
-  imageUrl: string;
-  revisedPrompt?: string;
-}
-
 export interface GenerateRequestBody {
   designBase64: string;
-  designMimeType: string;
+  designMimeType: AcceptedMimeType;
   modelId: ModelId;
 }
 

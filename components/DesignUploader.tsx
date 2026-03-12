@@ -130,7 +130,7 @@ export default function DesignUploader({
           />
           <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
             <button
-              onClick={() => inputRef.current?.click()}
+              onClick={() => { setError(null); inputRef.current?.click(); }}
               className="bg-white text-gray-800 text-sm font-medium px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors"
             >
               Replace Image
@@ -176,7 +176,7 @@ export default function DesignUploader({
             <p className="text-sm font-medium text-gray-700">
               {isDragging ? "Drop your design here" : "Click or drag your design"}
             </p>
-            <p className="text-xs text-gray-400 mt-1">PNG, JPG, WEBP - max 10MB</p>
+            <p className="text-xs text-gray-400 mt-1">PNG, JPG, WEBP, GIF — max 10MB</p>
           </div>
         </label>
       )}
