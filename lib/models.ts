@@ -78,19 +78,20 @@ You are given two images:
 This is a professional photo retouching task on an existing real photograph -- not an image generation task. Do not generate a new image. Do not redraw any part of the scene. Edit only what is explicitly specified below.
 
 WHAT TO CHANGE:
-Replace the entire t-shirt worn by the model in IMAGE 2 with the t-shirt shown in IMAGE 1. This includes the shirt's base color, graphic, text, and all design details. Do not approximate, summarize, or reinterpret IMAGE 1 -- copy it exactly. Every color, shape, graphic element, and text in IMAGE 1 must appear identically on the model's shirt. If you are uncertain about a detail in IMAGE 1, reproduce what you see literally -- do not invent or substitute.
+Replace the entire t-shirt worn by the model in IMAGE 2 with the t-shirt shown in IMAGE 1. Every single detail of the output shirt -- color, graphic, text, print, pattern, and overall appearance -- must come EXCLUSIVELY from IMAGE 1. Do not carry over, blend, or retain ANY detail from the model's original shirt in IMAGE 2. The original shirt in IMAGE 2 is completely discarded and replaced. Do not approximate, summarize, or reinterpret IMAGE 1 -- copy it exactly and completely.
+
+CRITICAL -- SHIRT SOURCE RULE:
+The output shirt must look like IMAGE 1's shirt worn by the model in IMAGE 2's pose and lighting. It must NOT look like IMAGE 2's shirt with IMAGE 1's design applied on top. Every shirt detail -- base color, fabric color, graphic, text, print, logo, and pattern -- must come solely from IMAGE 1. Nothing from IMAGE 2's shirt should remain in the output.
 
 WHAT MUST NOT CHANGE (preserve pixel-perfectly):
 - The model's face, skin tone, eyes, lips, expression, and all facial features
 - The model's hair color, texture, hairline, and any hair accessories
 - The model's hands, fingers, fingernails, arms, elbows, neck, and body proportions
 - The model's exact pose, stance, and body posture
-- All clothing other than the shirt's graphic area (pants, shoes, socks, belt, accessories, jewelry, outerwear, hats)
-- The shirt's fabric texture, shape, cut, collar style, sleeve length, hem, cuffs, and all seam lines (the shirt's base color SHOULD change to match the uploaded design)
+- All clothing other than the shirt (pants, shoes, socks, belt, accessories, jewelry, outerwear, hats)
 - The background -- its color, tone, texture, gradients, depth, and any environmental or studio elements
 - The scene's lighting direction, softness, intensity, and color temperature
-- All existing shadows cast by the model onto the background and onto the shirt itself
-- All existing highlights, reflections, and specularity on the shirt fabric
+- All existing shadows cast by the model onto the background
 - The camera framing, crop, angle, focal length, and perspective
 - The photo's overall exposure, contrast, white balance, saturation, and color grading
 - Any lens distortion, vignetting, or optical characteristics present in the original photo
