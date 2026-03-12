@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380" fill="none">
+  <!-- Background - warm premium -->
+  <rect width="300" height="380" fill="#FAF7F2"/>
+
+  <!-- Body silhouette -->
+  <ellipse cx="150" cy="90" rx="37" ry="41" fill="#E8D5C0"/>
+
+  <!-- Neck -->
+  <rect x="138" y="124" width="24" height="20" rx="4" fill="#E8D5C0"/>
+
+  <!-- Premium fitted tee (slightly tucked look, neutral tone) -->
+  <path d="M92 142 L114 130 L138 145 L162 145 L186 130 L208 142 L216 222 L84 222 Z" fill="#F5F0E8" stroke="#E0D8CC" stroke-width="1.5"/>
+
+  <!-- Shirt sleeves (relaxed, premium casual) -->
+  <path d="M92 142 L72 170 L88 178 L108 158 Z" fill="#F5F0E8" stroke="#E0D8CC" stroke-width="1.5"/>
+  <path d="M208 142 L228 170 L212 178 L192 158 Z" fill="#F5F0E8" stroke="#E0D8CC" stroke-width="1.5"/>
+
+  <!-- Design area placeholder (subtle warm tint) -->
+  <rect x="124" y="156" width="52" height="46" rx="3" fill="#E8E0D0" opacity="0.7"/>
+  <text x="150" y="182" font-family="system-ui, sans-serif" font-size="9" fill="#A89880" text-anchor="middle">design</text>
+  <text x="150" y="193" font-family="system-ui, sans-serif" font-size="9" fill="#A89880" text-anchor="middle">here</text>
+
+  <!-- Chinos / tailored pants -->
+  <path d="M84 222 L216 222 L210 318 L165 318 L150 278 L135 318 L90 318 Z" fill="#8B7355"/>
+
+  <!-- Premium leather shoes -->
+  <path d="M95 320 Q120 315 148 322 L148 332 Q120 336 90 330 Z" fill="#3D2B1F"/>
+  <path d="M205 320 Q180 315 152 322 L152 332 Q180 336 210 330 Z" fill="#3D2B1F"/>
+
+  <!-- Small detail: shirt collar seam -->
+  <path d="M138 145 Q150 155 162 145" stroke="#D8CFBE" stroke-width="1.5" fill="none"/>
+
+  <!-- Label -->
+  <text x="150" y="353" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#8B7355" text-anchor="middle" letter-spacing="3">PREMIUM</text>
+  <text x="150" y="368" font-family="system-ui, sans-serif" font-size="9" fill="#A89880" text-anchor="middle" letter-spacing="1">Casual · Refined</text>
+</svg>
