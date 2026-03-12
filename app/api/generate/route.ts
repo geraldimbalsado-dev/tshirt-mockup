@@ -82,10 +82,10 @@ export async function POST(request: NextRequest) {
     const ext = mimeToExt(designMimeType as AcceptedMimeType);
     const designFile = await toFile(imageBuffer, `design.${ext}`, { type: designMimeType });
 
-    // Send design first so it gets treated as the primary reference, model photo second as the canvas to edit
+    // Model photo first = the image being edited. Design second = the reference to copy the shirt from.
     const response = await openai.images.edit({
       model: "gpt-image-1",
-      image: [designFile, modelPhotoFile],
+      image: [modelPhotoFile, designFile],
       prompt: SHARED_PROMPT,
       n: 1,
       size: "1024x1024",

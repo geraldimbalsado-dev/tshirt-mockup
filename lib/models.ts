@@ -72,16 +72,16 @@ export const BRAND_MODELS: BrandModel[] = [
 // Prompt used for all models -- passed to OpenAI images.edit server-side
 export const SHARED_PROMPT = `
 You are given two images:
-- IMAGE 1: The t-shirt design to copy. This is the source of truth. Every detail, color, graphic, text, and shirt color in this image must be reproduced exactly.
-- IMAGE 2: A photograph of a model. This is the canvas. Apply the t-shirt from IMAGE 1 onto the model in IMAGE 2.
+- IMAGE 1: A photograph of a model. This is the canvas. Edit this image by replacing the model's t-shirt with the t-shirt from IMAGE 2.
+- IMAGE 2: The t-shirt design to copy. This is the source of truth. Every detail, color, graphic, text, and shirt color in this image must be reproduced exactly.
 
 This is a professional photo retouching task on an existing real photograph -- not an image generation task. Do not generate a new image. Do not redraw any part of the scene. Edit only what is explicitly specified below.
 
 WHAT TO CHANGE:
-Replace the entire t-shirt worn by the model in IMAGE 2 with the t-shirt shown in IMAGE 1. Every single detail of the output shirt -- color, graphic, text, print, pattern, and overall appearance -- must come EXCLUSIVELY from IMAGE 1. Do not carry over, blend, or retain ANY detail from the model's original shirt in IMAGE 2. The original shirt in IMAGE 2 is completely discarded and replaced. Do not approximate, summarize, or reinterpret IMAGE 1 -- copy it exactly and completely.
+Replace the entire t-shirt worn by the model in IMAGE 1 with the t-shirt shown in IMAGE 2. Every single detail of the output shirt -- color, graphic, text, print, pattern, and overall appearance -- must come EXCLUSIVELY from IMAGE 2. Do not carry over, blend, or retain ANY detail from the model's original shirt in IMAGE 1. The original shirt in IMAGE 1 is completely discarded and replaced. Do not approximate, summarize, or reinterpret IMAGE 2 -- copy it exactly and completely.
 
 CRITICAL -- SHIRT SOURCE RULE:
-The output shirt must look like IMAGE 1's shirt worn by the model in IMAGE 2's pose and lighting. It must NOT look like IMAGE 2's shirt with IMAGE 1's design applied on top. Every shirt detail -- base color, fabric color, graphic, text, print, logo, and pattern -- must come solely from IMAGE 1. Nothing from IMAGE 2's shirt should remain in the output.
+The output shirt must look like IMAGE 2's shirt worn by the model in IMAGE 1's pose and lighting. It must NOT look like IMAGE 1's shirt with IMAGE 2's design applied on top. Every shirt detail -- base color, fabric color, graphic, text, print, logo, and pattern -- must come solely from IMAGE 2. Nothing from IMAGE 1's shirt should remain in the output.
 
 WHAT MUST NOT CHANGE (preserve pixel-perfectly):
 - The model's face, skin tone, eyes, lips, expression, and all facial features
