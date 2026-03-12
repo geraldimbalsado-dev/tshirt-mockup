@@ -71,10 +71,14 @@ export const BRAND_MODELS: BrandModel[] = [
 
 // Prompt used for all models -- passed to OpenAI images.edit server-side
 export const SHARED_PROMPT = `
+You are given two images:
+- IMAGE 1: The t-shirt design to copy. This is the source of truth. Every detail, color, graphic, text, and shirt color in this image must be reproduced exactly.
+- IMAGE 2: A photograph of a model. This is the canvas. Apply the t-shirt from IMAGE 1 onto the model in IMAGE 2.
+
 This is a professional photo retouching task on an existing real photograph -- not an image generation task. Do not generate a new image. Do not redraw any part of the scene. Edit only what is explicitly specified below.
 
 WHAT TO CHANGE:
-Replace the entire t-shirt appearance with the design provided in the second image. This includes both the shirt's base color and the graphic printed on it -- apply the uploaded design's shirt color AND its graphic exactly as they appear. Reproduce the uploaded design faithfully -- do not simplify, stylize, reinterpret, rescale disproportionately, or alter its colors, shapes, layout, or composition in any way.
+Replace the entire t-shirt worn by the model in IMAGE 2 with the t-shirt shown in IMAGE 1. This includes the shirt's base color, graphic, text, and all design details. Do not approximate, summarize, or reinterpret IMAGE 1 -- copy it exactly. Every color, shape, graphic element, and text in IMAGE 1 must appear identically on the model's shirt. If you are uncertain about a detail in IMAGE 1, reproduce what you see literally -- do not invent or substitute.
 
 WHAT MUST NOT CHANGE (preserve pixel-perfectly):
 - The model's face, skin tone, eyes, lips, expression, and all facial features

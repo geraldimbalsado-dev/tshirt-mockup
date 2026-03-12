@@ -63,10 +63,10 @@ export async function POST(request: NextRequest) {
     const ext = mimeToExt(designMimeType);
     const designFile = await toFile(imageBuffer, `design.${ext}`, { type: designMimeType });
 
-    // Send both images: model photo (base) + uploaded design (reference)
+    // Send design first so it gets treated as the primary reference, model photo second as the canvas to edit
     const response = await openai.images.edit({
       model: "gpt-image-1",
-      image: [modelPhotoFile, designFile],
+      image: [designFile, modelPhotoFile],
       prompt: SHARED_PROMPT,
       n: 1,
       size: "1024x1024",
